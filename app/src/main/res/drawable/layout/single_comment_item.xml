@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff717171" android:id="@id/tvAuthorName" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff717171" android:gravity="right" android:id="@id/tvDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RatingBar android:id="@id/rbCommnetRating" android:layout_width="80.0dip" android:layout_height="18.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:max="5" android:numStars="5" android:isIndicator="true" style="@style/RatingBarLarge" />
+    <TextView android:textSize="15.0sp" android:textColor="#ffa3a3a3" android:id="@id/tvCommentContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" />
+    <View android:background="@color/vertical_divider_welcome" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="10.0dip" />
+</LinearLayout>

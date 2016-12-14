@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/llsingle_item_col1" android:background="@drawable/white_rectangle_black_border" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="275.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="220.0dip">
+            <ImageView android:id="@id/ivshop_single_image1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/logo1" />
+            <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ff5b78a3" android:gravity="center" android:id="@id/tvshop_single_stock1" android:background="#fff2f2f2" android:paddingLeft="10.0dip" android:paddingTop="4.5dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dip" android:text="HOT!" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <View android:background="@color/vertical_divider_welcome" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:weightSum="1.0">
+            <TextView android:textSize="15.0sp" android:textColor="#ff5e5e5e" android:layout_gravity="left" android:id="@id/tvshop_single_name1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hatley" android:maxLines="1" android:layout_weight="1.0" />
+            <RatingBar android:layout_gravity="right" android:id="@id/rbshop_single_rate1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:max="5" android:numStars="5" android:rating="4.0" android:isIndicator="true" style="@style/RatingBar20" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip">
+            <TextView android:textSize="12.0sp" android:gravity="right" android:id="@id/tvshop_single_price1_special" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="$88.00" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff48bf7f" android:gravity="right" android:id="@id/tvshop_single_price1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="$88.00" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

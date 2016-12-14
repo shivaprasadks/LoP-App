@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120.0dip"
+        android:background="#ffffffff"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@id/ivSimilar_thumbnail"
+            android:layout_width="100.0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="5.0dip"
+            android:layout_marginRight="10.0dip"
+            android:adjustViewBounds="true"
+            android:padding="5.0dip"
+            android:src="@drawable/logo1" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/vertical_divider_welcome" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:paddingRight="10.0dip"
+            android:paddingTop="10.0dip">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical"
+                    android:paddingBottom="10.0dip">
+
+                    <TextView
+                        android:id="@id/tvSimilar_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10.0dip"
+                        android:textColor="#ff717171"
+                        android:textSize="15.0sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@id/tvSimilar_brand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="10.0dip"
+                            android:textColor="#ffa3a3a3"
+                            android:textSize="14.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RatingBar
+                            android:id="@id/rbSimilar_rating"
+                            style="@style/RatingBarLarge32"
+                            android:layout_width="105.0dip"
+                            android:layout_height="24.0dip"
+                            android:layout_marginRight="10.0dip"
+                            android:isIndicator="true"
+                            android:max="5"
+                            android:numStars="5" />
+
+                        <TextView
+                            android:id="@id/tvSimilar_Rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(0)"
+                            android:textColor="#ffa3a3a3"
+                            android:textSize="14.0sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@id/tvSimilar_product_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textColor="#ff54c891"
+                        android:textSize="15.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@id/lvShopItems"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20.0dip"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="7.5dip" />
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/frame_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:layout_gravity="left" android:orientation="vertical" android:id="@id/lv_menu" android:background="#ffffffff" android:layout_width="240.0dip" android:layout_height="fill_parent">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0dip" android:textColor="#ff4e6a9f" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/my_account" />
+            </LinearLayout>
+            <View android:background="@color/vertical_divider_welcome" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/relview_edit_Accout_info" android:background="?android:activatedBackgroundIndicator" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="15.0dip" android:textColor="#ff757575" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/edit_account_information" />
+            </LinearLayout>
+            <View android:background="@color/vertical_divider_welcome" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/relview_change_pass" android:background="?android:activatedBackgroundIndicator" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="15.0dip" android:textColor="#ff757575" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/change_password" />
+            </LinearLayout>
+            <View android:background="@color/vertical_divider_welcome" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/relview_modify_addressbook" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="15.0dip" android:textColor="#ff757575" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/modify_address_book" />
+            </LinearLayout>
+            <View android:background="@color/vertical_divider_welcome" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/relview_modify_wishlist" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="15.0dip" android:textColor="#ff757575" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/modify_wishlist" />
+            </LinearLayout>
+            <View android:background="@color/vertical_divider_welcome" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <TextView android:textSize="18.0dip" android:textColor="#ff4e6a9f" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/my_order" />
+            </LinearLayout>
+            <View android:background="@color/vertical_divider_welcome" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/relview_order_history" android:padding="10.0dip" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="15.0dip" android:textColor="#ff757575" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/order_history" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

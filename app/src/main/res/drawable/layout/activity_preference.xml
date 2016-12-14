@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_language" android:background="@drawable/new_edittext_shadow" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/black" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Language" />
+        <TextView android:textSize="14.0dip" android:id="@id/tv_language" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_language" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_currency" android:background="@drawable/new_edittext_shadow" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/black" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/currency" />
+        <TextView android:textSize="14.0dip" android:id="@id/tv_currency" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_currency" />
+    </LinearLayout>
+</LinearLayout>

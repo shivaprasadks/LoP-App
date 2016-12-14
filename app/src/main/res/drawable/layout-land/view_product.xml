@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ffffff" android:orientation="horizontal">
+
+    <LinearLayout android:layout_width="300dp" android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingLeft="20dp">
+
+            <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_weight="1.0" android:paddingRight="10dp" android:paddingTop="10dp">
+
+                <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                    <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <TextView android:id="@id/tvView_product_name"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:paddingRight="10dp" android:textColor="#717171"
+                            android:textSize="18sp" />
+
+                        <TextView android:id="@id/tvView_product_brand"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:paddingRight="10dp" android:textColor="#a3a3a3"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <ImageView android:id="@id/ivView_product_thumbnail" android:layout_width="80dp"
+                        android:layout_height="80dp" android:layout_margin="5dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/white_rectangle_black_border"
+                        android:padding="5dp" />
+                </TableRow>
+
+                <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                    <LinearLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:layout_span="2"
+                        android:gravity="center_vertical" android:orientation="horizontal">
+
+                        <RatingBar android:id="@id/rbView_product_rating"
+                            style="@style/RatingBarLarge32" android:layout_width="105dp"
+                            android:layout_height="24dp" android:layout_marginRight="10dp"
+                            android:isIndicator="true" android:max="5" android:numStars="5" />
+
+                        <TextView android:id="@id/tvView_Rating" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:text="(0)"
+                            android:textColor="#a3a3a3" android:textSize="14sp" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                    <LinearLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:layout_span="2"
+                        android:gravity="center_vertical" android:orientation="horizontal">
+
+                        <TextView android:id="@id/tvView_product_price"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:gravity="start" android:textColor="@color/red_welcome"
+                            android:textSize="18sp" />
+
+                        <TextView android:id="@id/tvView_product_price_special"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" android:textColor="#a3a3a3"
+                            android:textSize="16sp" android:visibility="invisible" />
+
+                        <TextView android:id="@id/tvView_product_status"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" android:textColor="#54c891"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+
+            <View android:layout_width="1dp" android:layout_height="match_parent"
+                android:background="@color/vertical_divider_welcome" />
+
+            <LinearLayout android:layout_width="120dp" android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <View android:layout_width="match_parent" android:layout_height="1dp"
+                    android:background="@color/vertical_divider_welcome" />
+
+                <ImageView android:id="@id/ivView_product_comment"
+                    android:layout_width="match_parent" android:layout_height="40dp"
+                    android:padding="10dp" android:src="@drawable/chat" />
+
+                <View android:layout_width="match_parent" android:layout_height="1dp"
+                    android:background="@color/vertical_divider_welcome" />
+
+                <ImageView android:id="@id/ivView_product_love" android:layout_width="match_parent"
+                    android:layout_height="40dp" android:padding="10dp"
+                    android:src="@drawable/love" />
+
+                <View android:layout_width="match_parent" android:layout_height="1dp"
+                    android:background="@color/vertical_divider_welcome" />
+
+                <ImageView android:id="@id/ivView_product_info" android:layout_width="match_parent"
+                    android:layout_height="40dp" android:padding="10dp"
+                    android:src="@drawable/info" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/vertical_divider_welcome" />
+
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <LinearLayout android:id="@id/lvoption" android:layout_width="match_parent"
+                android:layout_height="70dp" android:orientation="horizontal" />
+        </ScrollView>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/vertical_divider_welcome" />
+
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_gravity="bottom" android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" android:orientation="horizontal">
+
+                <Button android:id="@id/bView_product_similar" android:layout_width="match_parent"
+                    android:layout_height="45dp" android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" android:layout_weight="1.0"
+                    android:background="#6a89ae" android:text="Similar Items"
+                    android:textColor="#ffffff" android:textSize="18sp" />
+
+                <Button android:id="@id/bView_product_add_to_cart"
+                    android:layout_width="match_parent" android:layout_height="45dp"
+                    android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+                    android:layout_weight="1.0" android:background="#55c892"
+                    android:text="Add to Cart" android:textColor="#ffffff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <View android:layout_width="1dp" android:layout_height="match_parent"
+        android:background="@color/vertical_divider_welcome" />
+
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <android.support.v4.view.ViewPager android:id="@id/pager"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:layout_marginBottom="70dp" />
+
+        <com.opencart.think.views.HorizontalListView android:id="@id/lvView_product_color_options"
+            android:layout_width="match_parent" android:layout_height="70dp"
+            android:layout_gravity="bottom" android:paddingRight="30dp" />
+
+        <ListView android:id="@id/lvView_product_comments" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:background="#ffffff"
+            android:divider="#ffffff" android:padding="5dp" android:visibility="invisible" />
+
+        <ScrollView android:id="@id/svView_product_scroll_info" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:background="#ffffff"
+            android:visibility="invisible">
+
+            <TextView android:id="@id/tvView_product_info" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:background="#ffffff"
+                android:lineSpacingExtra="5dp" android:text="There are no any information"
+                android:textColor="#a3a3a3" android:textSize="14sp" />
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="115.0dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_rectangle_bluish_border"
+    android:orientation="vertical"
+    android:padding="5.0dip">
+
+    <ImageView
+        android:id="@id/img_smilar_product"
+        android:layout_width="113.0dip"
+        android:layout_height="120.0dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo1" />
+
+    <TextView
+        android:id="@id/tv_smilar_product_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@id/tv_smilar_product_price"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="$5000.55"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="#ff48bf7f" />
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/rounded_corner_login">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <ImageView
+        android:id="@+id/img_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/app_logo" />
+
+    <LinearLayout
+        android:id="@+id/lv_body"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_cancel"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="20.0dip">
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/email1"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:textColorHint="#ffcccccc" />
+
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-2.0dip"
+            android:drawableLeft="@drawable/password"
+            android:hint="@string/password_hint"
+            android:padding="10.0dip"
+            android:password="true"
+            android:singleLine="true"
+            android:textColorHint="#ffcccccc" />
+
+        <TextView
+            android:id="@+id/tv_forget_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-2.0dip"
+            android:text="@string/forget_password"
+            android:textColor="@color/DimGray"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/btnSingIn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6.0dip"
+            android:layout_weight="1.0"
+            android:background="#ff55c892"
+            android:padding="10.0dip"
+            android:text="@string/log_in"
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:id="@+id/tv_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/strRegister"
+            android:textColor="@color/bootstrap_brand_danger"
+            android:textSize="18.0dip"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+</RelativeLayout>

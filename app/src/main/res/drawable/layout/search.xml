@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10.0dip">
+
+        <ImageView
+            android:id="@id/imageView1"
+            android:layout_width="16.0dip"
+            android:layout_height="16.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:src="@drawable/search" />
+
+        <TextView
+            android:id="@id/tvSearch_querry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:text="Hatley"
+            android:textColor="#ff717171"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@id/lvShopItems"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20.0dip"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="7.5dip" />
+</LinearLayout>

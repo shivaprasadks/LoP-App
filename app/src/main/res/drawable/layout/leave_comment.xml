@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/cart_row">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/white_rectangle_black_border"
+            android:orientation="vertical"
+            android:paddingBottom="10.0dip">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@id/editText_Name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_weight="1.0"
+                    android:background="#ffffffff"
+                    android:hint="@string/your_name"
+                    android:padding="10.0dip"
+                    android:textColor="#ffa7a7a7"
+                    android:textColorHint="#ffbbbbbb"
+                    android:textSize="20.0dip" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/vertical_divider_welcome" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@id/editText_comment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_weight="1.0"
+                    android:background="#ffffffff"
+                    android:hint="@string/i_like_this_because"
+                    android:padding="10.0dip"
+                    android:textColor="#ffa7a7a7"
+                    android:textColorHint="#ffbbbbbb"
+                    android:textSize="20.0dip" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/vertical_divider_welcome" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_weight="1.0"
+                    android:padding="10.0dip"
+                    android:text="@string/rating"
+                    android:textColor="#ffa7a7a7"
+                    android:textSize="20.0dip" />
+
+                <RatingBar
+                    android:id="@id/ratinProduct"
+                    style="@style/RatingBarLarge40"
+                    android:layout_width="135.0dip"
+                    android:layout_height="32.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:max="5"
+                    android:numStars="5" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:paddingBottom="5.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/cart_row"
+            android:layout_gravity="bottom"
+            android:background="#ffffffff"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@id/btnComment_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5.0dip"
+                android:layout_weight="1.0"
+                android:background="@color/blue"
+                android:text="@string/cancel"
+                android:textColor="#ffffffff" />
+
+            <Button
+                android:id="@id/btnComment_save"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5.0dip"
+                android:layout_weight="1.0"
+                android:background="@color/green"
+                android:text="@string/submit"
+                android:textColor="#ffffffff" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

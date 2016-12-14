@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="8.0dip"
+        android:paddingTop="10.0dip">
+
+        <ListView
+            android:id="@id/lvShopItems"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null" />
+
+        <TextView
+            android:id="@id/empty"
+            style="@android:style/TextAppearance.Large"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/strNoRecordsFound" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/ll_header_option"
+        android:layout_width="fill_parent"
+        android:layout_height="35.0dip"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="17.5dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@id/ll_view_type"
+            android:layout_width="35.0dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/white_rectangle_black_border"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@id/iv_view_type"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="10.0dip"
+                android:src="@drawable/listview" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/ll_sort"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/white_rectangle_black_border"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/sort_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="15.0dip"
+                android:gravity="center"
+                android:text="@string/sort" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/ll_filter"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/white_rectangle_black_border"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/filter_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10.0dip"
+                android:gravity="center"
+                android:text="@string/filter" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

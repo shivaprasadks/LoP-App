@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Spa Treatment"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:background="@color/view_divider_color" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Normal Wash"
+                android:textColor="@color/White"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text=" Starts @ ₹599/- "
+                android:textSize="28sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_horizontal"
+                android:text="Select Package"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radio_normal_wash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <RadioButton
+                    android:id="@+id/normal_smaal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:hint="457"
+                    android:text="Small Breed @ ₹599/-" />
+
+                <RadioButton
+                    android:id="@+id/normal_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="458"
+                    android:text="Medium Breed @ ₹699/-" />
+
+                <RadioButton
+                    android:id="@+id/normal_large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="459"
+                    android:text="Large Breed @ ₹799/-" />
+
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/btn_normal_wash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/bootstrap_brand_success"
+                android:text="Add to cart"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Skin Itching Treatment"
+                android:textColor="@color/White"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text=" Starts @ ₹899/- "
+                android:textSize="28sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_horizontal"
+                android:text="Select Package"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radio_skin_itch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <RadioButton
+                    android:id="@+id/skin_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:hint="457"
+                    android:text="Small Breed @ ₹899/-" />
+
+                <RadioButton
+                    android:id="@+id/skin_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="458"
+                    android:text="Medium Breed @ ₹999/-" />
+
+                <RadioButton
+                    android:id="@+id/skin_large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="459"
+                    android:text="Large Breed @ ₹1099/-" />
+
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/btn_skin_itch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/bootstrap_brand_success"
+                android:text="Add to cart"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

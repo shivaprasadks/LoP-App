@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/lv_filter" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <View android:background="@color/vertical_divider_welcome" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:weightSum="3.0">
+        <View android:background="@color/vertical_divider_welcome" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_reset" android:background="#ff6a89ae" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/reset" android:layout_weight="1.0" />
+        <View android:background="@color/vertical_divider_welcome" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_apply_filter" android:background="#ff55c892" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/apply_filter" android:layout_weight="2.0" />
+        <View android:background="@color/vertical_divider_welcome" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <View android:background="@color/vertical_divider_welcome" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="#ffa3a3a3" android:gravity="center_vertical" android:id="@id/tvshop_single_category_results" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+</LinearLayout>

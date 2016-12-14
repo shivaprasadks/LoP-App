@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="18.0sp" android:id="@id/tvCartItem_name" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+            <TextView android:textSize="16.0sp" android:id="@id/tvCartItem_model" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffa3a3a3" android:id="@id/tvCartItem_Options" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="right" android:id="@id/option_menu" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_menu" />
+    </LinearLayout>
+    <View android:background="@color/vertical_divider_welcome" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llCartItem_Qty" android:paddingTop="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="18.0sp" android:id="@id/tvCartItem_Qty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffa3a3a3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qty" />
+        </LinearLayout>
+        <View android:background="@color/vertical_divider_welcome" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llCartItem_unitPrice" android:paddingTop="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="18.0sp" android:id="@id/tvCartItem_unitPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffa3a3a3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unit_price" />
+        </LinearLayout>
+        <View android:background="@color/vertical_divider_welcome" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="18.0sp" android:id="@id/tvCartItem_Price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$45.95" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffa3a3a3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/price" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/vertical_divider_welcome" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

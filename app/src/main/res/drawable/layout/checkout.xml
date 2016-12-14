@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="#ffffffff"
+                android:orientation="vertical"
+                android:paddingBottom="10.0dip">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:background="#ff5e80ab"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="10.0dip">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left"
+                        android:text="@string/your_personal_data"
+                        android:textColor="#ffffffff"
+                        android:textSize="@dimen/text_normal"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@id/etCheckOut_Fname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:ems="10"
+                    android:hint="@string/first_name_hint"
+                    android:inputType="textPersonName"
+                    android:textColor="#ff5f5f5f"
+                    android:textColorHint="#ffbbbbbb">
+
+                    <requestFocus />
+                </EditText>
+
+                <EditText
+                    android:id="@id/etCheckOut_Lname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:ems="10"
+                    android:hint="@string/last_name_hint"
+                    android:inputType="textPersonName"
+                    android:textColor="#ff5f5f5f"
+                    android:textColorHint="#ffbbbbbb" />
+
+                <EditText
+                    android:id="@id/etCheckOut_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:ems="10"
+                    android:hint="@string/email_hint"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#ff5f5f5f"
+                    android:textColorHint="#ffbbbbbb" />
+
+                <EditText
+                    android:id="@id/etCheckOut_telphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:hint="@string/telephone_hint"
+                    android:inputType="phone"
+                    android:textColor="#ff5f5f5f"
+                    android:textColorHint="#ffbbbbbb" />
+
+                <EditText
+                    android:id="@id/etCheckOut_fax"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:ems="10"
+                    android:hint="@string/fax"
+                    android:textColor="#ff5f5f5f"
+                    android:textColorHint="#ffbbbbbb" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_marginTop="20.0dip"
+                android:background="#ffffffff"
+                android:orientation="vertical"
+                android:paddingBottom="10.0dip">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:background="#ff5e80ab"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="10.0dip">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left"
+                        android:text="@string/your_Address"
+                        android:textColor="#ffffffff"
+                        android:textSize="@dimen/text_normal"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@id/etCheckOut_company"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:ems="10"
+                    android:hint="@string/company"
+                    android:textColor="#ff5f5f5f"
+                    android:textColorHint="#ffbbbbbb" />
+
+                <EditText
+                    android:id="@id/etCheckOut_address1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:ems="10"
+                    android:hint="@string/address1_hint"
+                    android:textColor="#ff5f5f5f"
+                    android:textColorHint="#ffbbbbbb" />
+
+                <EditText
+                    android:id="@id/etCheckOut_address2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:ems="10"
+                    android:hint="@string/address2"
+                    android:textColor="#ff5f5f5f"
+                    android:textColorHint="#ffbbbbbb" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@id/etCheckOut_city"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_weight="1.0"
+                        android:ems="5"
+                        android:hint="@string/city_hint"
+                        android:textColor="#ff5f5f5f"
+                        android:textColorHint="#ffbbbbbb" />
+
+                    <EditText
+                        android:id="@id/etCheckOut_pin"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_weight="1.0"
+                        android:ems="4"
+                        android:hint="@string/postal_code_hint"
+                        android:inputType="number"
+                        android:textColor="#ff5f5f5f"
+                        android:textColorHint="#ffbbbbbb" />
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@id/spCheckOut_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:ems="10" />
+
+                <Spinner
+                    android:id="@id/spCheckOut_State"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:ems="10" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:paddingBottom="5.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/cart_row"
+            android:layout_gravity="bottom"
+            android:background="#ffffffff"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@id/bCheckOut_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5.0dip"
+                android:layout_weight="1.0"
+                android:background="@color/blue"
+                android:text="@string/cancel"
+                android:textColor="#ffffffff" />
+
+            <Button
+                android:id="@id/bCheckOut_save"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5.0dip"
+                android:layout_weight="1.0"
+                android:background="@color/green"
+                android:text="@string/save"
+                android:textColor="#ffffffff" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

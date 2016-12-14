@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/ll_leftside"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@id/ll_home"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8.0dip">
+
+            <ImageView
+                android:id="@id/img_category"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:src="@drawable/ic_home" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5.0dip"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:text="@string/Home"
+                android:textColor="#ff4e6a9f"
+                android:textSize="@dimen/text_title" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2.0dip"
+            android:background="@color/vertical_divider_welcome" />
+
+        <ExpandableListView
+            android:id="@id/categoryList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:groupIndicator="@null" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@id/leftProgressBar"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="#ff5e5e5e" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="Trending" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/arrow" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <android.support.v4.view.ViewPager android:id="@id/vpShop" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

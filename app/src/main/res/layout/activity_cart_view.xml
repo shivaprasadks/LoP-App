@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cart_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.think.myopencart.CartViewActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <include layout="@layout/cart_view_header" />
+    <Button
+        android:id="@+id/btn_checkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:text="CHECKOUT"
+        android:textColor="@color/WhiteSmoke" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cart_product_list"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="5.0dip">
+        <ImageView android:id="@id/imageview_app_logo" android:background="#ffb3b7b7" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="200.0dip" android:src="@drawable/ic_launcher" android:adjustViewBounds="true" />
+        <TextView android:textStyle="bold" android:layout_gravity="left" android:id="@id/tv_label1" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="1.0dip" android:text="@string/your_personal_data" />
+        <View android:background="@color/vertical_divider_welcome" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/lv_personal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textColor="#ff5f5f5f" android:textColorHint="#ffbbbbbb" android:layout_gravity="center" android:id="@id/et_fname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:hint="@string/first_name_hint" android:maxLines="1" android:singleLine="true" android:inputType="textPersonName" />
+            <EditText android:textColor="#ff5f5f5f" android:textColorHint="#ffbbbbbb" android:layout_gravity="center" android:id="@id/et_lname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:hint="@string/last_name_hint" android:maxLines="1" android:ems="10" android:singleLine="true" />
+            <EditText android:textColor="#ff5f5f5f" android:textColorHint="#ffbbbbbb" android:id="@id/et_tel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:hint="@string/telephone_hint" android:maxLines="1" android:ems="10" android:singleLine="true" android:inputType="phone">
+                <requestFocus />
+            </EditText>
+            <EditText android:textColor="#ff5f5f5f" android:textColorHint="#ffbbbbbb" android:layout_gravity="center" android:id="@id/et_Email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:hint="@string/email_hint" android:maxLines="1" android:ems="10" android:singleLine="true" android:inputType="textEmailAddress" />
+            <EditText android:textColor="#ff5f5f5f" android:textColorHint="#ffbbbbbb" android:layout_gravity="center" android:id="@id/et_fax" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:hint="@string/fax" android:maxLines="1" android:ems="10" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:weightSum="2.0" android:layout_weight="1.0">
+            <Button android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/btn_cancel" android:background="#ff6a89ae" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/cancel" android:layout_weight="1.0" />
+            <Button android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/btn_edit_account_info" android:background="#ff55c892" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/edit_data" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
